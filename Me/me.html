@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>--Me</title>
+
+	<link rel="stylesheet" type="text/css" href="../PagePilling/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="me.css" />
+	<link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css" />
+
+	<script src="../jquery-3.3.1.min.js"></script>
+	<script src="../animatenumber/jquery.animateNumber.js"></script>
+
+	<script type="text/javascript" src="../PagePilling/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+
+	    		menu: '#menu',
+	    		navigation: {
+		        }
+			});
+	    });
+    </script>
+
+</head>
+<body>
+
+	<div id="pagepiling">
+
+
+		<div id="close">
+			<a href="../home/home.html">
+				<svg viewBox="0 0 100 100" width="100px" height="100px">
+					<polygon points="53.31 49.77 99.54 96 96 99.54 49.77 53.3 3.54 99.54 0 96 46.23 49.77 0 3.54 3.54 0 49.77 46.23 96 0 99.54 3.54 53.31 49.77"></polygon>
+				</svg>
+			</a>
+			</div>
+
+
+	    <div class="section" id="section1">
+	   	<h1>Hey</h1>
+	    </div>
+
+	    <div class="section" id="section2">
+	    	<div class="lista">
+	    		<h1>this is me </h1>
+					<ul> 20 years old </ul>
+					<ul> 174 cm</ul>
+					<ul> italian </ul>
+					<ul> mom says I'm fine :) </ul>
+	    	</div>
+				<img src="bio.jpg" id="bio">
+	    </div>
+
+	    <div class="section" id="section3">
+	    		<h1 id="titolo">I do stuff on social networks <sup id="piccolo"> click me </sup> </h1>
+
+
+
+					<p id="testo" class="nascondi">
+						I'm always looking for the best ways to communicate online.
+						<br></br>
+						Thanks to my daily experience on field and to the frequent readings of essays,
+						<br></br>
+						my curiosity is contantly growing. This gives me the opportunity
+						<br></br>
+						to create,  <span id="colore">experiment</span> and provoke everyday
+						<br></br>
+						new ways to live inside the most harmonious social media dynamics. </p>
+		 		</div>
+
+				<div class="section" id="section4">
+					<h1 id="titolo2">These are a few numbers <sup id="piccolo"> click me </sup> </h1>
+					<div id="testo2" class="nascondi">
+						<h2> personal pages </h2>
+					 <sup id="piccolino"> <span id="numero1"> 0 </span> likes </sup>
+				 </div>
+					<div id="testo3" class="nascondi">
+ 						<h2> pages that worked with me</h2>
+ 					 <sup id="piccolino"> <span id="numero2"> 0 </span> likes </sup>
+			   	 </div>
+					 <div id="testo4" class="nascondi">
+  						<h2> average engagement rate</h2>
+  					 <sup id="piccolino"> <span id="numero3"> 0 </span> % </sup>
+ 			   	 </div>
+			 </div>
+
+
+			 <div class="section" id="section5">
+				 <h1> and that's my <a href="../files/cv.pdf" target="_blank"><u>CV</u></a> btw </h1>
+				 </div>
+
+
+
+</div>
+
+
+<script>
+$(document).ready(function(){
+$("#titolo").click(function(){
+$("#testo").removeClass("nascondi"); $("#testo").addClass("animazione");$("#titolo").addClass("nascondi")
+});
+});
+</script>
+
+
+<script>
+var comma_separator_number_step = $.animateNumber.numberStepFactories.separator('.')
+$(document).ready(function(){
+$("#titolo2").click(function(){
+$("#testo2").removeClass("nascondi"); $("#testo2").addClass("animazione");$("#titolo2").addClass("nascondi");
+$('#numero1').animateNumber({number : 5000000,  numberStep: comma_separator_number_step });
+});
+$("#testo2").click(function(){
+$("#testo3").removeClass("nascondi"); $("#testo3").addClass("animazione");$("#testo2").addClass("nascondi");
+$('#numero2').animateNumber({number : 23000000,  numberStep: comma_separator_number_step})
+});
+$("#testo3").click(function(){
+$("#testo4").removeClass("nascondi"); $("#testo4").addClass("animazione");$("#testo3").addClass("nascondi");
+$('#numero3').animateNumber({number : 18,  numberStep: comma_separator_number_step})
+});
+});
+
+</script>
+
+	<script type="text/javascript">
+	function cambiacolore()
+
+	{
+
+	var r = Math.round(Math.random()*256);
+	var g = Math.round(Math.random()*256);
+	var b = Math.round(Math.random()*256);
+
+
+	colore_rgb = "rgb(" + r + "," + g + ", " + b + ")";
+
+	colore.style.color = colore_rgb;
+	}
+
+
+	setInterval(cambiacolore,150);
+	</script>
+</body>
+
+
+</html>
