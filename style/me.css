@@ -96,10 +96,12 @@ h2{
  }
  #section1, #section3, #section5
  {
-   background-color: #FFF
+   background-color: #FFF;
+   background-size:  100%
  }
  #section2, #section4, #section6
- {background-color: Yellow
+ {background-color: Yellow;
+   background-size: 100%
  }
 
 
