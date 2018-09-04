@@ -96,7 +96,6 @@ color: black;
  left:50%;
  width: 250px
 }
-
 #close {
     color: white;
     display: block;
@@ -141,6 +140,15 @@ background-size: 100%
   position: relative;
   left: 150px;
   animation: fadeIn 2s
+}
+
+#scroll {
+    position: absolute;
+    top: 87%;
+    right:-95px;
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: auto;
 }
 
 

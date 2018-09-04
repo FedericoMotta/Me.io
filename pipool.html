@@ -26,12 +26,14 @@
     </script>
 
 
-
 		<script>
 		window.addEventListener("load", function(){
 			$("#loader").fadeOut(500)
 
 		});
+		</script>
+		<script>
+		window.setTimeout(function(){$("#scroller").removeClass("nascondi");$("#scroller").addClass("animazione")}, 5000);
 		</script>
 </head>
 <body>
@@ -51,8 +53,11 @@
 
 
 	    <div class="section" id="section1">
+				<div id="scroller" class="nascondi">
+					<img src="img/scroll.gif" id="scroll">
+				</div>
+			<img src="img/logopipool.png" id="pipool">
 
-			<img src="img/logopipool.png">
 
 			</div>
 

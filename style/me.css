@@ -78,6 +78,15 @@ color: black;
   width: 250px
  }
 
+ #scroll {
+     position: absolute;
+     top: 87%;
+     right:-95px;
+     transform: translate(-50%,-50%);
+     height: 150px;
+     filter: invert(100);
+ }
+
 @keyframes fadeIn {
   From {opacity: 0
 
@@ -146,12 +155,12 @@ h2{
 }
 #bio
 {
-  width: 700px;
+  width: 650px;
   height: auto;
   position: absolute;
   transform: translate(-50%,-50%);
   left: 75vw;
-  top: 46.5vh
+  top: 50.2vh;
   }
 #section2 h1,ul {
   text-align: left;
@@ -161,7 +170,7 @@ h2{
 {
   transform: translateX(-50%,-50%);
   top:33vh;
-  left: 33vh;
+  left: 50vh;
   position: absolute;
 }
 .animazione
