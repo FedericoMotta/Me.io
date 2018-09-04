@@ -10,7 +10,8 @@ color: black;
 Body
 {
   color: #121212;
-  font-family: 'Gotham'
+  font-family: 'Gotham';
+  background-size: 100%
 }
 
 
@@ -42,7 +43,7 @@ transform: translate(50%)
 
 a
 {font-family: 'Gotham';
-font-weight: bold;
+  font-weight: 700;
 font-size: 50px;
 line-height: 40px;
 transition: 0.1s;
