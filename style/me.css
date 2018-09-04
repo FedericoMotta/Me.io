@@ -59,6 +59,25 @@ color: black;
      transform: scale(0.5);
  }
 
+ #loader{
+  background: #FFF;
+  opacity: 1;
+  position: fixed;
+    z-index:10;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+ }
+
+ #loader img
+ {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  width: 250px
+ }
+
 @keyframes fadeIn {
   From {opacity: 0
 
@@ -129,16 +148,21 @@ h2{
 {
   width: 700px;
   height: auto;
-  position: relative;
-  right: -50vh;
-  top: -35vh
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 75vw;
+  top: 46.5vh
   }
 #section2 h1,ul {
-  transform: translateX(50vh);
-    position: relative;
   text-align: left;
-  top:33vh
+}
 
+.lista
+{
+  transform: translateX(-50%,-50%);
+  top:33vh;
+  left: 33vh;
+  position: absolute;
 }
 .animazione
 {

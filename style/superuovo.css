@@ -75,6 +75,24 @@ color: black;
      cursor: default
  }
 
+ #loader{
+  background: #FFF;
+  opacity: 1;
+  position: fixed;
+    z-index:10;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+ }
+
+ #loader img
+ {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  width: 250px
+ }
  #close {
      color: white;
      display: block;
@@ -129,17 +147,18 @@ background-size: 100%
   position: fixed;
   left: 30vw;
   top: 50vh;
-  transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%);
 
 }
  #section2 h1
  {   left:30%;
      font-weight: bold;
-     font-size: 50px;
+     font-size: 40px;
    }
 
+
 #section2 img{
-  width: 500px;
+  width: 400px;
   position: fixed;
   left: 75vw;
   top: 58vh;
@@ -160,7 +179,7 @@ background-size: 100%
 	}
 }
 #section2 p{
- 	font-size: 20px;
+ 	font-size: 18px;
   font-weight: 400;
   line-height: 20px
  }
@@ -175,28 +194,32 @@ background-size: 100%
 }
 
 #section3 h1{
-  font-size: 60px;
+  font-size: 40px;
   line-height: 30px
 }
 
 #section3 h2
 {
-  font-size: 50px;
+  font-size: 35px;
   line-height: 0px;
   transition: 0.3s
 }
 #section3 h2:hover{
-  transform: scale(1.1)
+  transform: scale(1.2)
 }
 
 #section3 h3
 {
-  font-size: 30px
+  font-size: 25px
 }
 #section3 p
 { cursor: pointer;
-  font-size: 20px;
+  font-size: 17px;
+  transition: 0.3s
 }
+
+#section3 p:hover
+{transform: scale(1.1);}
 
 #testo2
 {
@@ -216,30 +239,30 @@ background-size: 100%
 }
 #facebook
 {
-  width:100px;
   height: auto;
 }
 #instagram
 {
-  width:100px;
   height: auto;
   position: relative;
   right: 70px;
 }
-.icona
+
+#gruppo
 {
+  height: auto;
+  position: relative;
+  left: 70px;
+}
+
+.icona
+{   width:75px;
     transition: 0.3s
 }
 .icona:hover{
   transform: scale(1.1)
 }
-#gruppo
-{
-  width:100px;
-  height: auto;
-  position: relative;
-  left: 70px;
-}
+
 
 .nascondi{
   display:none;
