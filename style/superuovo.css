@@ -126,7 +126,7 @@ background-size: 100%
  #scroll {
      position: absolute;
      top: 87%;
-     right:-95px;
+     right:-105px;
      transform: translate(-50%,-50%);
      height: 150px;
      width: auto;
