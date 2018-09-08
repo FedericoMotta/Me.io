@@ -94,14 +94,12 @@ color: black;
   width: 250px
  }
  #close {
-     color: white;
      display: block;
      position: fixed;
      top: 36px;
      right: 46px;
      z-index: 100;
      transform: scale(0.5);
-     fill: #fff
  }
 
 
