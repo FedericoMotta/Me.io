@@ -155,12 +155,11 @@ h2{
 }
 #bio
 {
-  width: 650px;
+  width: 45%;
   height: auto;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  left: 75vw;
-  top: 50.2vh;
+  position: fixed;
+  left: 50%;
+  bottom: 0%;
   }
 #section2 h1,ul {
   text-align: left;
